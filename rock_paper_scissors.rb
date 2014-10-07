@@ -1,4 +1,4 @@
-require 'pry'
+#require 'pry'
 
 WEAPONS = {r: "rock", p: "paper", s: "scissors"}
 
@@ -37,10 +37,10 @@ def best_weapon(weapon_one, weapon_two)
   return win_lose_tie
 end
 
-puts = "Rock, Paper, Scissors!"
+puts "Rock, Paper, Scissors!"
 
 loop do
-  
+
   begin
     puts "Choose your weapon! (r)ock, (p)aper or (s)cissors"
     human_input = gets.chomp.downcase.to_sym
@@ -56,6 +56,6 @@ loop do
   else
     puts "It's a tie, try again!"
   end
-  
-  
+
+
 end
